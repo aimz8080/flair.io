@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Showcase</title>
+    <style>
+       body {
+		background-image: url("ab5f830b-63d4-459a-bd48-e1a3bc36adb0(1).jpg"); /* Replace with the path to your image */
+		background-size: cover; /* Ensures the image covers the entire background */
+		background-position: center; /* Centers the background image */
+		background-repeat: no-repeat; /* Prevents the image from repeating */
+		font-family: 'Poppins', sans-serif;
+		text-align: center;
+		color: #fff;
+		margin: 0;
+		padding: 0;
+	}
+
+        .header {
+			border-radius: 20px;
+			margin-right: 400px;
+			margin-left: 400px;
+            background: #ff5e78;
+            padding: 20px;
+            font-size: 32px;
+            font-weight: bold;
+            animation: fadeInDown 1s ease-in-out;
+        }
+        .cake-card {
+            width: 80%;
+            height: 80%;
+            background: #fff;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+            animation: fadeIn 1s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+        }
+        .cake-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .cake-card p {
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .cake-card:hover {
+            transform: scale(1.05);
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Delicious Cake Showcase</div>
+    <div class="gallery">
+        <div class="cake-card"><img src="./Cakes_From_tg/photo_2025-03-20_17-15-13.jpg" alt="Chocolate Cake"><p>Chocolate Delight</p></div>
+        <div class="cake-card"><img src="./Cakes_From_tg/photo_2025-03-20_17-14-49.jpg" alt="Vanilla Cake"><p>Vanilla Dream</p></div>
+        <div class="cake-card"><img src="./Cakes_From_tg/photo_2025-03-20_17-14-35.jpg" alt="Strawberry Cake"><p>Strawberry Bliss</p></div>
+        <div class="cake-card"><img src="./Cakes_From_tg/photo_2025-03-20_17-15-10.jpg" alt="Red Velvet Cake"><p>Red Velvet</p></div>
+        <div class="cake-card"><img src="./Cakes_From_tg/photo_2025-03-20_17-15-21.jpg" alt="Lemon Cake"><p>Lemon Zest</p></div>
+        <div class="cake-card"><img src="./Cakes_From_tg/photo_2025-03-20_17-15-13.jpg" alt="Carrot Cake"><p>Carrot Crunch</p></div>
+        <div class="cake-card"><img src="./Cakes_From_tg/photo_2025-03-20_17-14-46.jpg" alt="Black Forest Cake"><p>Black Forest</p></div>
+        <div class="cake-card"><img src="./Cakes_From_tg/photo_2025-03-20_17-14-53.jpg" alt="Coffee Cake"><p>Coffee Bliss</p></div>
+        <div class="cake-card"><img src="./Cakes_From_tg/photo_2025-03-20_17-14-39.jpg" alt="Mango Cake"><p>Mango Magic</p></div>
+    </div>
+</body>
+</html>
